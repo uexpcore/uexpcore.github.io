@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dasun Kalhara — Cyber Security Enthusiast, Web Developer & Student." />
+  <meta name="author" content="Dasun Kalhara" />
+  <title>Dasun Kalhara | IT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- NOISE TEXTURE -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">DK</span>
+        <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-orb orb-2" aria-hidden="true"></div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <div class="hero-eyebrow reveal-up">
+          <span class="dot-pulse"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name reveal-up">
+          Dasun<br><em>Kalhara</em>
+        </h1>
+        <div class="hero-role reveal-up">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-bio reveal-up">
+          IT professional bridging <strong>cyber security</strong> and <strong>web development</strong> —
+          building systems that are robust, scalable, and resilient against modern threats.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i> View Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Let's Talk
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="profile-card">
+          <div class="pc-glow"></div>
+          <img src="./hero2.png" alt="Dasun Kalhara" class="pc-img" />
+          <div class="pc-overlay">
+            <div class="pc-info">
+              <span class="pc-name">Dasun Kalhara</span>
+              <span class="pc-title">IT Professional · Sri Lanka</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-stat-cards">
+          <div class="hsc">
+            <strong id="stat-projects">5</strong><sup>+</sup>
+            <span>Projects</span>
+          </div>
+          <div class="hsc">
+            <strong id="stat-certs">3</strong><sup>+</sup>
+            <span>Certs</span>
+          </div>
+          <div class="hsc">
+            <strong id="stat-skills">10</strong><sup>+</sup>
+            <span>Skills</span>
+          </div>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/mrunknownexploiter" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/unknownexploiter404/" target="_blank" rel="noopener"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:hello.kalhara@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">01 — About</span>
+        <h2 class="sec-title">Who I Am</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-left reveal-left">
+          <div class="about-img-wrap">
+            <img src="./heroimage.png" alt="Dasun at work" class="about-img" loading="lazy" />
+            <div class="about-img-badge">
+              <i class="fas fa-shield-alt"></i>
+              <span>Cyber Security</span>
+            </div>
+          </div>
+          <div class="about-quick-facts">
+            <div class="aqf">
+              <i class="fas fa-map-marker-alt"></i>
+              <div><strong>Location</strong><span>Sri Lanka</span></div>
+            </div>
+            <div class="aqf">
+              <i class="fas fa-graduation-cap"></i>
+              <div><strong>Education</strong><span>Self-Taught IT & Cyber Security Student</span></div>
+            </div>
+            <div class="aqf">
+              <i class="fas fa-language"></i>
+              <div><strong>Languages</strong><span>English &amp; Sinhala</span></div>
+            </div>
+            <div class="aqf">
+              <i class="fas fa-flag"></i>
+              <div><strong>CTF</strong><span>Active Competitor</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal-right">
+          <h3 class="about-heading">
+            <em>Cyber Security</em> Enthusiast & IT Learner
+          </h3>
+          <p class="body-text">
+            I'm Dasun Kalhara — a driven IT student operating at the intersection of security and
+            development. I constantly explore new vulnerabilities, defense mechanisms, and emerging
+            threats to stay sharp in this rapidly evolving field.
+          </p>
+          <p class="body-text">
+            Beyond security, I craft reliable web experiences that balance strong engineering with
+            clean design. Every system I build gets the same depth of attention and care.
+          </p>
+          <blockquote class="objective-quote">
+            <p>"To contribute to safer digital environments through penetration testing,
+              security analysis, and secure software development."</p>
+            <cite>Career Objective</cite>
+          </blockquote>
+          <div class="tag-row">
+            <span class="chip"><i class="fas fa-shield-alt"></i> Ethical Hacking</span>
+            <span class="chip"><i class="fas fa-network-wired"></i> Network Security</span>
+            <span class="chip"><i class="fas fa-code"></i> Web Dev</span>
+            <span class="chip"><i class="fab fa-linux"></i> Linux</span>
+            <span class="chip"><i class="fas fa-robot"></i> IoT</span>
+            <span class="chip"><i class="fas fa-flag"></i> CTF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-tinted" id="skills">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">02 — Skills</span>
+        <h2 class="sec-title">Technical Capabilities</h2>
+      </div>
+
+      <!-- Tabs -->
+      <div class="sk-tabs reveal-up">
+        <button class="sk-tab active" data-tab="security">
+          <i class="fas fa-shield-alt"></i> Security
+        </button>
+        <button class="sk-tab" data-tab="development">
+          <i class="fas fa-code"></i> Development
+        </button>
+        <button class="sk-tab" data-tab="tools">
+          <i class="fas fa-tools"></i> Tools &amp; Hardware
+        </button>
+      </div>
+
+      <!-- Panel: Security -->
+      <div class="sk-panel active" data-panel="security">
+        <div class="sk-grid">
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="80">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-shield-alt"></i></div>
+            </div>
+            <strong>Cyber Security</strong>
+            <span>Advanced</span>
+            <!-- <div class="sk-pct-label">80%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="75">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-network-wired"></i></div>
+            </div>
+            <strong>Networking</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">75%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="72">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-bug"></i></div>
+            </div>
+            <strong>Pen Testing</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">72%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="68">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-search"></i></div>
+            </div>
+            <strong>OSINT</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">68%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="65">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-file-alt"></i></div>
+            </div>
+            <strong>I/R</strong>
+            <span>Learning</span>
+            <!-- <div class="sk-pct-label">65%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="70">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-flag"></i></div>
+            </div>
+            <strong>CTF Challenges</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">70%</div> -->
+          </div>
+
+        </div>
+
+        <div class="sk-tags-row reveal-up">
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Kali Linux</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Metasploit</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Wireshark</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Burp Suite</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Nmap</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> TryHackMe</span>
+        </div>
+      </div>
+
+      <!-- Panel: Development -->
+      <div class="sk-panel" data-panel="development">
+        <div class="sk-grid">
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="90">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fab fa-html5"></i></div>
+            </div>
+            <strong>HTML5</strong>
+            <span>Expert</span>
+            <!-- <div class="sk-pct-label">90%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="85">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fab fa-css3-alt"></i></div>
+            </div>
+            <strong>CSS3</strong>
+            <span>Advanced</span>
+            <!-- <div class="sk-pct-label">85%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="72">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fab fa-js"></i></div>
+            </div>
+            <strong>JavaScript</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">72%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="70">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fab fa-python"></i></div>
+            </div>
+            <strong>Python</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">70%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="75">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fab fa-git-alt"></i></div>
+            </div>
+            <strong>Git &amp; GitHub</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">75%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="60">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-database"></i></div>
+            </div>
+            <strong>SQL / DB</strong>
+            <span>Learning</span>
+            <!-- <div class="sk-pct-label">60%</div> -->
+          </div>
+
+        </div>
+
+        <div class="sk-tags-row reveal-up">
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Responsive Design</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> REST APIs</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> VS Code</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> npm</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Vite</span>
+        </div>
+      </div>
+
+      <!-- Panel: Tools & Hardware -->
+      <div class="sk-panel" data-panel="tools">
+        <div class="sk-grid">
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="78">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fab fa-linux"></i></div>
+            </div>
+            <strong>Linux</strong>
+            <span>Advanced</span>
+            <!-- <div class="sk-pct-label">78%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="65">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-microchip"></i></div>
+            </div>
+            <strong>Arduino</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">65%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="60">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-network-wired"></i></div>
+            </div>
+            <strong>Wireshark</strong>
+            <span>Intermediate</span>
+            <!-- <div class="sk-pct-label">60%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="70">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-terminal"></i></div>
+            </div>
+            <strong>CLI / Bash</strong>
+            <span>Advanced</span>
+            <!-- <div class="sk-pct-label">70%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="55">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-server"></i></div>
+            </div>
+            <strong>Cloud</strong>
+            <span>Beginner</span>
+            <!-- <div class="sk-pct-label">55%</div> -->
+          </div>
+
+          <div class="sk-node reveal-up">
+            <div class="sk-ring" data-pct="50">
+              <svg viewBox="0 0 80 80">
+                <circle class="sk-ring-bg" cx="40" cy="40" r="34" />
+                <circle class="sk-ring-fill" cx="40" cy="40" r="34" />
+              </svg>
+              <div class="sk-ring-inner"><i class="fas fa-robot"></i></div>
+            </div>
+            <strong>IoT / Sensors</strong>
+            <span>Learning</span>
+            <!-- <div class="sk-pct-label">50%</div> -->
+          </div>
+
+        </div>
+
+        <div class="sk-tags-row reveal-up">
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> VirtualBox</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Nmap</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> C++</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Sensors</span>
+          <span class="sk-tag"><i class="fas fa-circle-dot"></i> Stepper Motors</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">03 — Projects</span>
+        <h2 class="sec-title">Selected Work</h2>
+      </div>
+      <div class="proj-filter reveal-up">
+        <button class="pf-btn active" data-filter="all">All</button>
+        <button class="pf-btn" data-filter="web">Web</button>
+        <button class="pf-btn" data-filter="security">Security</button>
+        <button class="pf-btn" data-filter="hardware">Hardware</button>
+      </div>
+      <div class="proj-grid">
+
+        <article class="pcard reveal-up" data-category="web">
+          <div class="pcard-img">
+            <img
+              src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Portfolio Website" loading="lazy" />
+            <div class="pcard-overlay">
+              <a href="https://github.com" target="_blank" rel="noopener" class="plink-icon" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <a href="#" class="plink-icon" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-cat">Web</span>
+            <h3>Portfolio Website</h3>
+            <p>A modern, responsive personal portfolio built with pure HTML, CSS &amp; JS featuring smooth animations
+              and clean UX.</p>
+            <div class="pcard-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pcard reveal-up" data-category="hardware">
+          <div class="pcard-img">
+            <img
+              src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Arduino CNC" loading="lazy" />
+            <div class="pcard-overlay">
+              <!-- <a href="https://github.com" target="_blank" rel="noopener" class="plink-icon" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+              <!-- <a href="#" class="plink-icon" aria-label="Live"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-cat">Hardware</span>
+            <h3>Arduino CNC Machine</h3>
+            <p>A DIY CNC plotter with Arduino, stepper motors, and a custom G-code interpreter that draws vector
+              graphics on paper.</p>
+            <div class="pcard-tags">
+              <span>Arduino</span><span>C++</span><span>G-code</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pcard reveal-up" data-category="security">
+          <div class="pcard-img">
+            <img
+              src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Network Scanner" loading="lazy" />
+            <div class="pcard-overlay">
+              <!-- <a href="https://github.com" target="_blank" rel="noopener" class="plink-icon" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+              <!-- <a href="#" class="plink-icon" aria-label="Live"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-cat">Security</span>
+            <h3>Network Scanner</h3>
+            <p>Python-based tool for host discovery, port scanning, OS fingerprinting, and service version detection via
+              Nmap.</p>
+            <div class="pcard-tags">
+              <span>Python</span><span>Nmap</span><span>Networking</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pcard reveal-up" data-category="security">
+          <div class="pcard-img">
+            <img
+              src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Cyber Security Lab" loading="lazy" />
+            <div class="pcard-overlay">
+              <!-- <a href="https://github.com" target="_blank" rel="noopener" class="plink-icon" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+              <!-- <a href="#" class="plink-icon" aria-label="Live"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-cat">Security</span>
+            <h3>Cyber Security Lab</h3>
+            <p>Virtual home lab with Kali Linux and Metasploitable for hands-on ethical hacking and penetration testing
+              practice.</p>
+            <div class="pcard-tags">
+              <span>Kali Linux</span><span>VirtualBox</span><span>Metasploit</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section-tinted" id="certifications">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">04 — Certifications</span>
+        <h2 class="sec-title">Credentials &amp; Achievements</h2>
+      </div>
+      <div class="certs-row">
+
+        <div class="cert-tile reveal-up">
+          <div class="ct-top">
+            <div class="ct-icon"><i class="fas fa-code"></i></div>
+            <span class="ct-verified"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+          <h3>Web Development</h3>
+          <p class="ct-org">NetSec &middot; 2023</p>
+          <p>HTML5, CSS3, JavaScript, responsive design and modern frontend practices.</p>
+          <!-- <a href="#" class="ct-link">View Certificate <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+
+        <div class="cert-tile reveal-up">
+          <div class="ct-top">
+            <div class="ct-icon"><i class="fas fa-network-wired"></i></div>
+            <span class="ct-verified"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+          <h3>Computer Fundamentals</h3>
+          <p class="ct-org">VisionTech Institute</p>
+          <p>Fundamentals of computer systems, operating systems, software, and IT concepts.</p>
+          <!-- <a href="#" class="ct-link">View Certificate <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+
+        <div class="cert-tile reveal-up">
+          <div class="ct-top">
+            <div class="ct-icon"><i class="fas fa-shield-alt"></i></div>
+            <span class="ct-verified"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+          <h3>Hardware & Networking NVQ4</h3>
+          <p class="ct-org">Vocational Training Authority</p>
+          <p>Computer hardware troubleshooting, networking fundamentals, system maintenance, and infrastructure
+            management.</p>
+          <!-- <a href="#" class="ct-link">View Certificate <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- RESUME -->
+  <section class="section" id="resume">
+    <div class="container">
+      <div class="sec-header reveal-up">
+        <span class="sec-tag">05 — Resume</span>
+        <h2 class="sec-title">Background &amp; Experience</h2>
+      </div>
+      <div class="resume-layout">
+        <div class="resume-left reveal-left">
+        <div class="resume-left reveal-left">
+    <h3 class="res-sub">
+        <i class="fas fa-graduation-cap"></i> Education
+    </h3>
+
+    <div class="tl">
+
+        <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+                <span class="tl-date">Present</span>
+                <h4>Computer Hardware & Networking (NVQ Level 4)</h4>
+                <p class="tl-org">Vocational Training Authority (VTA)</p>
+                <p>
+                    Studying computer hardware, networking, troubleshooting,
+                    operating systems, infrastructure management, and network technologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+                <span class="tl-date">Completed</span>
+                <h4>Computer Fundamentals</h4>
+                <p class="tl-org">VisionTech Institute</p>
+                <p>
+                    Learned core IT concepts including computer systems,
+                    operating systems, software applications, and digital technologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+                <span class="tl-date">Completed</span>
+                <h4>Python for Everyone</h4>
+                <p class="tl-org">University of Michigan</p>
+                <p>
+                    Studied Python programming, data structures,
+                    problem solving, and software development fundamentals.
+                </p>
+            </div>
+        </div>
+
+        <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+                <span class="tl-date">Ongoing Learning</span>
+                <h4>Cyber Security & Ethical Hacking</h4>
+                <p class="tl-org">Self-Learning & CTF Platforms</p>
+                <p>
+                    Developing practical skills through Capture The Flag competitions,
+                    security labs, networking projects, Linux administration,
+                    penetration testing, and OSINT challenges.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+        </div>
+        <div class="resume-right reveal-right">
+          <h3 class="res-sub"><i class="fas fa-layer-group"></i> Skills Summary</h3>
+          <div class="res-skills-box">
+            <div class="rsg">
+              <h4><i class="fas fa-shield-alt"></i> Security</h4>
+              <p>Penetration Testing, Vulnerability Assessment, Network Security, OSINT, CTF</p>
+            </div>
+            <div class="rsg">
+              <h4><i class="fas fa-code"></i> Development</h4>
+              <p>HTML5, CSS3, JavaScript, Python, Responsive Design, Git</p>
+            </div>
+            <div class="rsg">
+              <h4><i class="fas fa-tools"></i> Tools</h4>
+              <p>Kali Linux, Nmap, Wireshark, Metasploit, Burp Suite, VirtualBox</p>
+            </div>
+            <div class="rsg">
+              <h4><i class="fas fa-microchip"></i> Hardware</h4>
+              <p>Arduino, CNC Systems, IoT Prototyping, Electronics</p>
+            </div>
+          </div>
+          <h3 class="res-sub mt-lg"><i class="fas fa-trophy"></i> Achievements</h3>
+          <ul class="ach-list">
+            <li><i class="fas fa-flag"></i>
+              <div><strong>CTF Competitions</strong><span>Multiple Capture The Flag events</span></div>
+            </li>
+            <li><i class="fas fa-medal"></i>
+              <div><strong>TryHackMe Top 10%</strong><span>Top platform learner ranking</span></div>
+            </li>
+            <li><i class="fab fa-github"></i>
+              <div><strong>Open Source Contributor</strong><span>Active on GitHub repositories</span></div>
+            </li>
+          </ul>
+          <a href="mailto:hello.kalhara@gmail.com?subject=CV%20Request&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20request%20your%20CV.%0D%0A%0D%0AName:%20[Your%20Name%20/%20Company]%0D%0AReason:%20[Why%20you%20need%20it]%0D%0A%0D%0AThank%20you." class="btn btn-primary cv-btn" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+
+    <!-- Hero banner inside section -->
+    <div class="ct-banner reveal-up">
+      <div class="ct-banner-bg" aria-hidden="true"></div>
+      <div class="ct-banner-inner container">
+        <div class="ct-banner-text">
+          <span class="sec-tag ct-sec-tag">06 — Contact</span>
+          <h2 class="ct-banner-title">Let's Build Something<br><em>Together</em></h2>
+          <p>Open to internships, freelance projects, and security collaborations.</p>
+          <div class="avail-pill">
+            <span class="avail-dot"></span>
+            Available for new opportunities
+          </div>
+        </div>
+        <div class="ct-banner-deco" aria-hidden="true">
+          <div class="ct-deco-ring ct-deco-ring-1"></div>
+          <div class="ct-deco-ring ct-deco-ring-2"></div>
+          <i class="fas fa-paper-plane ct-deco-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Channel cards -->
+      <div class="ct-channels">
+        <a href="mailto:dasun@example.com" class="ct-channel reveal-up">
+          <div class="ct-ch-icon"><i class="fas fa-envelope"></i></div>
+          <div class="ct-ch-body">
+            <strong>Email</strong>
+            <span>hello.kalhara@gmail.com</span>
+          </div>
+          <div class="ct-ch-arrow"><i class="fas fa-external-link-alt"></i></div>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="ct-channel reveal-up">
+          <div class="ct-ch-icon"><i class="fab fa-github"></i></div>
+          <div class="ct-ch-body">
+            <strong>GitHub</strong>
+            <span>github.com/mrunknownexploiter</span>
+          </div>
+          <div class="ct-ch-arrow"><i class="fas fa-external-link-alt"></i></div>
+        </a>
+        <a href="https://linkedin.com/unknownexploiter404" target="_blank" rel="noopener" class="ct-channel reveal-up">
+          <div class="ct-ch-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="ct-ch-body">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/unknownexploiter404</span>
+          </div>
+          <div class="ct-ch-arrow"><i class="fas fa-external-link-alt"></i></div>
+        </a>
+        <div class="ct-channel ct-channel-loc reveal-up">
+          <div class="ct-ch-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="ct-ch-body">
+            <strong>Location</strong>
+            <span>Sri Lanka</span>
+          </div>
+          <div class="ct-ch-arrow"><i class="fas fa-globe"></i></div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="ct-form-wrap reveal-up">
+        <div class="ct-form-left">
+          <h3 class="ct-form-heading">Send a Message</h3>
+          <p class="ct-form-sub">Fill out the form and I'll respond within 24 hours.</p>
+          <ul class="ct-promises">
+            <li><i class="fas fa-check"></i> Quick response guaranteed</li>
+            <li><i class="fas fa-check"></i> Open to all collaboration types</li>
+            <li><i class="fas fa-check"></i> Security &amp; web projects welcome</li>
+          </ul>
+          <div class="ct-response-time">
+            <div class="ct-rt-ring">
+              <svg viewBox="0 0 60 60">
+                <circle cx="30" cy="30" r="26" fill="none" stroke="var(--line)" stroke-width="4" />
+                <circle cx="30" cy="30" r="26" fill="none" stroke="var(--em)" stroke-width="4" stroke-linecap="round"
+                  stroke-dasharray="163.4" stroke-dashoffset="40" transform="rotate(-90 30 30)" />
+              </svg>
+              <span>~24h</span>
+            </div>
+            <div>
+              <strong>Avg. Response</strong>
+              <span>Usually within a day</span>
+            </div>
+          </div>
+        </div>
+        <form class="cform" id="contact-form" novalidate>
+          <div class="fg-row">
+            <div class="fg">
+              <div class="fl-wrap">
+                <input type="text" id="name" name="name" placeholder=" " required autocomplete="name" />
+                <label for="name">Full Name</label>
+                <i class="fas fa-user fg-icon"></i>
+              </div>
+              <span class="ferr" id="name-error"></span>
+            </div>
+            <div class="fg">
+              <div class="fl-wrap">
+                <input type="email" id="email" name="email" placeholder=" " required autocomplete="email" />
+                <label for="email">Email Address</label>
+                <i class="fas fa-envelope fg-icon"></i>
+              </div>
+              <span class="ferr" id="email-error"></span>
+            </div>
+          </div>
+          <div class="fg">
+            <div class="fl-wrap">
+              <input type="text" id="subject" name="subject" placeholder=" " required />
+              <label for="subject">Subject</label>
+              <i class="fas fa-tag fg-icon"></i>
+            </div>
+            <span class="ferr" id="subject-error"></span>
+          </div>
+          <div class="fg">
+            <div class="fl-wrap fl-wrap-ta">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <span class="ferr" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+            <span class="btn-loading" style="display:none;"><i class="fas fa-circle-notch fa-spin"></i> Sending…</span>
+          </button>
+          <div class="form-ok" id="form-success" style="display:none;">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo">
+            <span class="logo-mark">DK</span>
+            <span class="logo-dot"></span>
+          </a>
+          <p>IT Professional &middot; Security &middot; Web Dev</p>
+          <div class="footer-socials">
+            <a href="https://github.com/mrunknownexploiter" target="_blank" rel="noopener" aria-label="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/dasunkalhara" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/unknownexploiter404" target="_blank" rel="noopener" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/unknownexploiter404" target="_blank" rel="noopener" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certs</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><i class="fas fa-envelope"></i> hello.kalhara@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Sri Lanka</p>
+          <p><i class="fab fa-github"></i> github.com/mrunknownexploiter</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Dasun Kalhara. All rights reserved.</p>
+        <p class="footer-mono">Created By Unknown Exploiter</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btt" id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
