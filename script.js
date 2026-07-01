@@ -1,3 +1,5 @@
+import "./message.js";
+
 /* ===== UTILITY ===== */
 function debounce(fn, ms) {
   let t;
