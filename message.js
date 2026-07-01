@@ -1,67 +1,52 @@
-// ===============================
-// Contact Form - Web3Forms
-// ===============================
+document.addEventListener("DOMContentLoaded", () => {
 
-const form = document.getElementById("contact-form");
-const submitBtn = document.getElementById("submit-btn");
+    const form = document.getElementById("contact-form");
+    if (!form) return;
 
-const btnText = submitBtn.querySelector(".btn-text");
-const btnLoading = submitBtn.querySelector(".btn-loading");
+    const submitBtn = document.getElementById("submit-btn");
+    const btnText = submitBtn.querySelector(".btn-text");
+    const btnLoading = submitBtn.querySelector(".btn-loading");
+    const successMessage = document.getElementById("form-success");
 
-const successMessage = document.getElementById("form-success");
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+        successMessage.style.display = "none";
 
-    // Hide previous success message
-    successMessage.style.display = "none";
+        const formData = new FormData(form);
+        formData.append("access_key", "85b825b9-2fe0-49ee-8521-f368588a1168");
 
-    // Create FormData
-    const formData = new FormData(form);
+        btnText.style.display = "none";
+        btnLoading.style.display = "inline-flex";
+        submitBtn.disabled = true;
 
-    // Web3Forms Access Key
-    formData.append("access_key", "85b825b9-2fe0-49ee-8521-f368588a1168");
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
 
-    // Optional
-    formData.append("from_name", "Portfolio Contact Form");
-    formData.append("subject", form.subject.value);
+            const data = await res.json();
 
-    // Button Loading State
-    btnText.style.display = "none";
-    btnLoading.style.display = "inline-flex";
-    submitBtn.disabled = true;
+            if (data.success) {
+                form.reset();
+                successMessage.style.display = "flex";
 
-    try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
+                setTimeout(() => {
+                    successMessage.style.display = "none";
+                }, 5000);
+            } else {
+                alert(data.message || "Failed");
+            }
 
-        const result = await response.json();
-
-        if (response.ok && result.success) {
-
-            successMessage.style.display = "flex";
-
-            form.reset();
-
-            // Hide success after 5 seconds
-            setTimeout(() => {
-                successMessage.style.display = "none";
-            }, 5000);
-
-        } else {
-            alert(result.message || "Failed to send message.");
+        } catch (err) {
+            console.error(err);
+            alert("Network error");
         }
-
-    } catch (error) {
-        console.error(error);
-        alert("Something went wrong. Please try again later.");
-    } finally {
 
         btnText.style.display = "inline-flex";
         btnLoading.style.display = "none";
         submitBtn.disabled = false;
+    });
 
-    }
 });
